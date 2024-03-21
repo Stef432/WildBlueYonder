@@ -37,14 +37,15 @@ function UserView() {
   const handleAddToBasket = () => {
     if (selectedItems) {
       setBasket([...basket, selectedItems]);
-      setSelectedItems(null);
+      alert("Your donation has been received. A gift is being wrapped!");
+      setSelectedItems([null]);
     }
   };
 
   return (
     <div className="user-view">
-      <h2 style={{ color: "gold" }}>Be a Secret Santa!</h2>
-      <h2 style={{ color: "gold" }}>
+      <h2 style={{ color: "black" }}>Be a Secret Santa!</h2>
+      <h2 style={{ color: "black" }}>
         See our Gift List for Vulnerable Young People
       </h2>
       <ImageGrid
@@ -53,7 +54,7 @@ function UserView() {
       />
 
       <div className="donations-items">
-        <h3 style={{ color: "gold" }}>Choose between our gift options</h3>
+        <h3 style={{ color: "black" }}>Choose between our gift options</h3>
       </div>
 
       <div className="selected-items">
@@ -71,7 +72,7 @@ function UserView() {
                 View Details
               </a>
             </p>
-            <button onClick={handleAddToBasket}>Add to Basket</button>
+            <button onClick={handleAddToBasket}>Buy</button>
           </div>
         ) : (
           <p>No gift selected</p>
@@ -79,10 +80,18 @@ function UserView() {
       </div>
 
       <div className="basket">
-        <p style={{ color: "gold" }}>Total items in basket: {basket.length}</p>
+        <p style={{ color: "black" }}>Total items in basket: {basket.length}</p>
         <ul>
           {basket.map((item, index) => (
-            <li key={index}>{item.item}</li>
+            <li key={index}>
+              {/* <button
+                type="button"
+                onClick={item.filter((item) => item.id !== item.id)}
+              >
+                X
+              </button> */}
+              {item.item}
+            </li>
           ))}
         </ul>
       </div>

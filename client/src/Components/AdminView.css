@@ -1,92 +1,98 @@
 /* AdminView.css */
 
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color:silver;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
 }
 
 .admin-view {
-    background-color: silver;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-h2 {
-    text-align: center;
-    color: #333;
+h2,
+button {
+  text-align: center;
+  color: #333;
 }
 
-.donation-list {
-    list-style: none;
-    padding: 0;
-}
+/* .donation-list {
+  list-style: none;
+  padding: 0;
+} */
 
-.donation-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 10px 0;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/* .donation-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
 
-.donation-item:hover {
-    transform: scale(1.02);
+/* .donation-item:hover {
+  transform: scale(1.02);
 }
 
 .donation-item img {
-    width: 100px;
-    height: auto;
-    border-radius: 5px;
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
 }
 
 .donation-item-info {
-    flex: 1;
-    margin-left: 15px;
+  flex: 1;
+  margin-left: 15px;
 }
 
 .donation-item-info h3 {
-    margin: 0;
-    color: #333;
+  margin: 0;
+  color: #333;
 }
 
 .donation-item-info p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: silver;
+  margin: 5px 0;
+  font-size: 14px;
+  color: silver;
 }
 
 .add-donation-form {
-    color : silver;
-    margin-top: 20px;
+  color: silver;
+  margin-top: 20px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
 }
 
 .form-group input {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
-
+ */
+.address {
+  text-align: center;
+}
+.contact-btn {
+  text-align: center;
+}
 /* .form-group button {
     background-color: #007bff;
     color: #fff;
