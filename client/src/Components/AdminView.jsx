@@ -8,15 +8,7 @@ function AdminView({ addItems }) {
     url: "",
   });
 
-  // // const handleChange = (event) => {
-  //   const { name, value } = event.target;
-  //   setDonations((prevDonations) => ({
-  //     ...prevDonations,
-  //     [name]: value,
-  //   }));
-  // // };
-
-  const sendThankYouEmail = async () => {
+  /*  const sendThankYouEmail = async () => {
     try {
       const response = await fetch("/api/sendThankYouEmail", {
         method: "POST",
@@ -40,7 +32,7 @@ function AdminView({ addItems }) {
     } catch (error) {
       console.error("Error sending thank you email:", error);
     }
-  };
+  }; */
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -55,8 +47,7 @@ function AdminView({ addItems }) {
 
   function handleClick(e) {
     e.preventDefault();
-    console.log("thanks");
-    alert("Care makes out heart warm and we thank you for that <3");
+    alert("Your donation has been received. A gift is being wrapped!");
     S;
   }
 
@@ -64,7 +55,6 @@ function AdminView({ addItems }) {
     <div className="admin-view">
       <h2>Secret Santa</h2>
       <form onSubmit={handleSubmit}>
-        {/* ... (your form inputs) */}
         <button type="submit" onClick={handleClick}>
           Send Thank You
         </button>

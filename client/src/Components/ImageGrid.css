@@ -1,7 +1,7 @@
 /* ImageGrid.css */
 
 .image-grid {
-  max-width:600px; 
+  max-width: 600px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
@@ -20,4 +20,5 @@
   width: 80%;
   object-fit: contain;
   aspect-ratio: 1/1;
+  border-radius: 40%;
 }
