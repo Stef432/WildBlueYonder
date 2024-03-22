@@ -26,7 +26,7 @@ function HomeView({ addItems }) {
 
   return (
     <div className="admin-view">
-      <h2>Secret Santa Initiative</h2>
+      <h2>Welcome to Secret Santa Initiative</h2>
       <h4>Social Workers for Change </h4>
       <br />
 

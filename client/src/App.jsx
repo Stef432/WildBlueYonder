@@ -15,8 +15,6 @@ function App() {
       <main>
         <NavBar />
 
-        <h1 style={{ color: "gold" }}>Welcome to Secret Santa App</h1>
-
         <Routes>
           <Route path="/" element={<HomeView />} />
           <Route path="/donations" element={<UserView />} />
