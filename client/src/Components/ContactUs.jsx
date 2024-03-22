@@ -39,7 +39,7 @@ export function ContactUs() {
   }
 
   return (
-    <>
+    <div className="container">
       <form className="contact_us" onSubmit={handleSubmit}>
         Leave your message and we'll get in touch
         <br />
@@ -57,6 +57,6 @@ export function ContactUs() {
         <textarea name="message" id="message" ref={messageRef} />
         <button type="submit">Send</button>
       </form>
-    </>
+    </div>
   );
 }

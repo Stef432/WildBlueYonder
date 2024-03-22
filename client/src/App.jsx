@@ -14,7 +14,6 @@ function App() {
     <div className="App">
       <main>
         <NavBar />
-
         <Routes>
           <Route path="/" element={<HomeView />} />
           <Route path="/donations" element={<UserView />} />
