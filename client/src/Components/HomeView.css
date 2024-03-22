@@ -1,0 +1,31 @@
+/* AdminView.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.admin-view {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+h2,
+button {
+  text-align: center;
+  color: #333;
+}
+
+.address {
+  text-align: center;
+}
+.contact-btn {
+  text-align: center;
+}

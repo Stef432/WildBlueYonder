@@ -1,21 +1,30 @@
 body {
   font-family: var(--bs-body-font-family);
-  margin: 0;
-  padding: 0;
-  background-image: url("https://www.southernliving.com/thmb/u8t3y6vDvcRlnZ2xwATyiFUAnDU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/27466_M.DillonXmas_12146180-c592d1e3165045b4a8721d35f939de19.jpg");
+  /*  margin: 0; */
+  /*  padding: 0; */
+  background-image: url("https://www.tbd.community/sites/default/files/styles/hd/public/field/image/list-charity-germany.jpg.webp?itok=02y1lYBd");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /*  background-color: rgb(255, 255, 255); */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* width: 50%; */
+  text-align: center;
+  margin: auto;
 }
+
 .wrapper--max {
   margin: 0 auto;
   max-width: 2556px;
 }
 .user-view {
-  background-color: rgba(255, 255, 255, 0.603);
+  background-color: rgba(255, 255, 255, 0.705);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);

@@ -42,27 +42,35 @@ function UserView() {
     }
   };
 
+  function handleClick(e) {
+    e.preventDefault();
+    setSelectedItems(!selectedItems);
+  }
+
   return (
     <div className="user-view">
       <h2 style={{ color: "black" }}>Be a Secret Santa!</h2>
-      <h2 style={{ color: "black" }}>
+      <h3 style={{ color: "black" }}>
         See our Gift List for Vulnerable Young People
-      </h2>
+      </h3>
       <ImageGrid
         donations={donations}
         onDonationSelect={handleDonationSelect}
       />
 
       <div className="donations-items">
-        <h3 style={{ color: "black" }}>Choose between our gift options</h3>
+        <h3 style={{ color: "black" }}>Selected items</h3>
       </div>
 
       <div className="selected-items">
         {selectedItems ? (
-          <div>
-            <p>Title: {selectedItems.item}</p>
-            <p>Description: {selectedItems.itemDescription}</p>
-            <p style={{ color: "gold" }}>Price: €{selectedItems.itemPrice} </p>
+          <div className="price-box">
+            <button type="button" onClick={handleClick}>
+              X
+            </button>
+            <h4>Title: {selectedItems.item}</h4>
+            <h4>Description: {selectedItems.itemDescription}</h4>
+            <p style={{ color: "black" }}>Price: €{selectedItems.itemPrice} </p>
             <p>
               <a
                 href={selectedItems.itemUrl}
@@ -75,25 +83,18 @@ function UserView() {
             <button onClick={handleAddToBasket}>Buy</button>
           </div>
         ) : (
-          <p>No gift selected</p>
+          <h4>No gift selected</h4>
         )}
-      </div>
-
-      <div className="basket">
-        <p style={{ color: "black" }}>Total items in basket: {basket.length}</p>
-        <ul>
-          {basket.map((item, index) => (
-            <li key={index}>
-              {/* <button
-                type="button"
-                onClick={item.filter((item) => item.id !== item.id)}
-              >
-                X
-              </button> */}
-              {item.item}
-            </li>
-          ))}
-        </ul>
+        <div className="basket">
+          <p style={{ color: "black" }}>
+            Total items in basket: {basket.length}
+          </p>
+          <ul>
+            {basket.map((item, index) => (
+              <li key={index}>{item.item}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

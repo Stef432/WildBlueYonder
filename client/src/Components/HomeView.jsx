@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./AdminView.css";
+import "./HomeView.css";
 
-function AdminView({ addItems }) {
+function HomeView({ addItems }) {
   const [donations, setDonations] = useState({
     title: "",
     description: "",
@@ -26,12 +26,12 @@ function AdminView({ addItems }) {
 
   return (
     <div className="admin-view">
-      <h2>Secret Santa</h2>
+      <h2>Secret Santa Initiative</h2>
       <h4>Social Workers for Change </h4>
       <br />
 
       <p>
-        Welcome to Secret Santa Charity, where every gift is a gesture of
+        Welcome to Secret Santa Initiative, where every gift is a gesture of
         kindness and generosity.
       </p>
       <p>
@@ -64,13 +64,12 @@ function AdminView({ addItems }) {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div> */}
-      <form onSubmit={handleSubmit}>
-        <button className="contact-btn" type="submit" onClick={handleClick}>
+      {/*  <form onSubmit={handleSubmit}>
+        <button type="submit" onClick={handleClick}>
           Contact us
-        </button>
-      </form>
+        </button></form> */}
     </div>
   );
 }
 
-export default AdminView;
+export default HomeView;

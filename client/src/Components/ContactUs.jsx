@@ -10,16 +10,17 @@ export function ContactUs() {
     e.preventDefault();
     const serviceId = "service_hmy3li6";
     const templateId = "template_5g0sfqe";
+
     const object = {
-      user_name: userNameRef.current.value,
-      user_email: userEmailRef.current.value,
+      to_name: userNameRef.current.value,
+      to_email: userEmailRef.current.value,
       message: messageRef.current.value,
     };
 
     console.log(object);
     emailjs
       .send(serviceId, templateId, object, {
-        publicKey: "1ViX0LeCXwEFavQqm",
+        publicKey: "tAoXO-yyMwRlio-eF",
       })
       .then(
         (response) => {
@@ -39,15 +40,12 @@ export function ContactUs() {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <div className="contact_us">
-          Leave your message and we'll get in touch
-          <br />
-          <br />
-        </div>
-        <label htmlFor="user_name">Name</label>
-        <input type="text" name="user_name" id="user_name" ref={userNameRef} />
-
+      <form className="contact_us" onSubmit={handleSubmit}>
+        Leave your message and we'll get in touch
+        <br />
+        <br />
+        <label htmlFor="to_name">Name</label>
+        <input type="text" name="to_name" id="to_name" ref={userNameRef} />
         <label htmlFor="user_email">Email</label>
         <input
           type="email"
@@ -55,10 +53,8 @@ export function ContactUs() {
           id="user_email"
           ref={userEmailRef}
         />
-
         <label htmlFor="message">Message</label>
-        <input name="message" id="message" ref={messageRef} />
-
+        <textarea name="message" id="message" ref={messageRef} />
         <button type="submit">Send</button>
       </form>
     </>

@@ -2,13 +2,15 @@
   box-sizing: border-box;
   text-align: center;
 }
-
+.contact_us {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 nav {
   background-color: #ffc107;
   width: 100%;
   float: left;
   display: block;
-  text-align: right;
+  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   position: fixed;
